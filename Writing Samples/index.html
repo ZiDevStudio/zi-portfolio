@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Writing | ZiDevStudio</title>
+  <meta charset="UTF-8" />
+  <title>Writing Samples | Zi Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card-bg: #ffffff;
+      --text-main: #252525;
+      --text-muted: #666666;
+      --accent: #b9867a;
+      --border-soft: #e1d7cc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top right, #fdf8f4, #f1eee9);
+      color: var(--text-main);
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0 0 0.5rem;
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      margin: 0;
+      max-width: 540px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline span {
+      width: 32px;
+      height: 1px;
+      background: var(--border-soft);
+    }
+
+    .sections {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 800px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .block {
+      background: var(--card-bg);
+      border-radius: 18px;
+      border: 1px solid var(--border-soft);
+      padding: 1.4rem 1.5rem 1.5rem;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.03);
+    }
+
+    .block h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+    }
+
+    .block p {
+      margin: 0 0 0.8rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    ul.sample-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    ul.sample-list li + li {
+      margin-top: 0.3rem;
+    }
+
+    ul.sample-list span.label {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-right: 0.4rem;
+    }
+
+    .back-link {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+    }
+
+    .back-link a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(185, 134, 122, 0.45);
+      padding-bottom: 1px;
+    }
+
+    .back-link a:hover {
+      border-bottom-color: rgba(185, 134, 122, 0.9);
+    }
+  </style>
 </head>
 <body>
-  <h1>Writing Portfolio</h1>
-  <p>Articles, story samples, and copy will be added here.</p>
+  <main class="page">
+    <div class="tagline">
+      <span></span> Writing Samples
+    </div>
+
+    <header>
+      <h1>Words that carry feeling & clarity</h1>
+      <p>
+        A mix of instructional copy, reflective essays, and fiction that leans into vivid imagery and
+        emotional honesty while staying clear and readable.
+      </p>
+    </header>
+
+    <section class="sections">
+      <article class="block">
+        <h2>Professional & practical</h2>
+        <p>Writing that explains, guides, or supports a product, process, or community.</p>
+        <ul class="sample-list">
+          <li><span class="label">Guide</span> Resident instructions & email templates</li>
+          <li><span class="label">How-to</span> Simple walkthroughs for tech / tools</li>
+          <li><span class="label">Copy</span> Short descriptions for events & promotions</li>
+        </ul>
+      </article>
+
+      <article class="block">
+        <h2>Creative & narrative</h2>
+        <p>Character-driven scenes, world-building notes, and introspective pieces.</p>
+        <ul class="sample-list">
+          <li><span class="label">Fiction</span> Short scenes from ongoing fantasy projects</li>
+          <li><span class="label">Lore</span> World notes for Telaris, Silver Pines & more</li>
+          <li><span class="label">Essay</span> Personal reflections and long-form thoughts</li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="back-link">
+      ← <a href="../index.html">Back to main portfolio</a>
+    </p>
+  </main>
 </body>
 </html>
