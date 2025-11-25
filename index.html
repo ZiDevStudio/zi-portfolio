@@ -1,146 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Zi Portfolio</title>
 
-  <!-- Soft neutral Google font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg: #f5f1ec;          /* warm, soft background */
-      --card: #ffffff;        /* card background */
-      --text-main: #2f2b28;   /* deep neutral brown/charcoal */
-      --text-muted: #857a70;  /* soft taupe */
-      --accent: #c8a88a;      /* beige-rose accent */
-      --accent-light: #e6d4c3;
-      --border-soft: #e0d6cc;
-    }
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="styles.css">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    body {
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
-      color: var(--text-main);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 32px 16px;
-    }
-
-    .shell {
-      max-width: 720px;
-      width: 100%;
-      background: var(--card);
-      border-radius: 18px;
-      border: 1px solid var(--border-soft);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.04);
-      padding: 32px 28px 28px;
-    }
-
-    header {
-      margin-bottom: 24px;
-    }
-
-    .eyebrow {
-      font-size: 0.8rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-
-    h1 {
-      font-family: "Playfair Display", "Times New Roman", serif;
-      font-size: 2rem;
-      letter-spacing: 0.03em;
-      margin-bottom: 8px;
-    }
-
-    .tagline {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-    }
-
-    h2 {
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--text-muted);
-      margin: 24px 0 12px;
-    }
-
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .link-card {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 14px;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      background: transparent;
-      transition: background 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
-      font-size: 0.95rem;
-    }
-
-    .link-card span.label {
-      font-weight: 500;
-    }
-
-    .link-card span.meta {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .link-card:hover {
-      background: var(--accent-light);
-      border-color: var(--accent);
-      transform: translateY(-1px);
-      cursor: pointer;
-    }
-
-    footer {
-      margin-top: 24px;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-      .shell {
-        padding: 24px 18px 20px;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
+<style>
+:root {
+   --bg: #f5f1ec;
+   --card: #ffffff;
+   --text-main: #2f2b28;
+   --text-muted: #857a70;
+   --accent: #c8a88a;
+   --accent-light: #e6d4c3;
+   --border-soft: #e0d6cc;
+}
+</style>
 </head>
+
+
+
 <body>
   <main class="shell">
     <header>
