@@ -1,14 +1,17 @@
+/* ------------------------------
+   ORIGINAL CLEAN PORTFOLIO STYLE
+--------------------------------*/
+
 :root {
-  --bg: #f5f1ec;        /* warm, soft background */
-  --card: #ffffff;      /* card background */
-  --text-main: #2f2b28; /* deep neutral brown */
-  --text-muted: #857a70;/* soft taupe */
-  --accent: #c8a88a;    /* beige-rose accent */
+  --bg: #f5f1ec;
+  --card: #ffffff;
+  --text-main: #2f2b28;
+  --text-muted: #857a70;
+  --accent: #c8a88a;
   --accent-light: #e6d4c3;
   --border-soft: #e0d6cc;
 }
 
-/* Reset / base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,87 +19,76 @@
 }
 
 body {
-  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #f9f4ee 0, var(--bg) 40%, #f3eee7 100%);
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
   color: var(--text-main);
   line-height: 1.6;
 }
 
-/* Main shell */
-main {
-  max-width: 960px;
-  margin: 64px auto 80px;
-  padding: 0 24px;
+/* Shell wrapper */
+.shell {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
 /* Header */
 header {
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
 }
 
-header .eyebrow {
-  letter-spacing: 0.18em;
+.eyebrow {
+  font-size: 0.9rem;
   text-transform: uppercase;
-  font-size: 11px;
+  letter-spacing: 0.1em;
   color: var(--text-muted);
-  margin-bottom: 8px;
+  margin-bottom: 0.4rem;
 }
 
-header h1 {
-  font-size: 32px;
-  letter-spacing: 0.04em;
-  text-transform: lowercase;
-  margin-bottom: 8px;
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
 }
 
-header .tagline {
-  font-size: 15px;
+.tagline {
   color: var(--text-muted);
+  font-size: 1.1rem;
 }
 
-/* If the content is still a list, make it feel card-like */
+/* Section */
+section {
+  margin-top: 3rem;
+}
 
-main ul {
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Links list */
+ul {
   list-style: none;
-  margin-top: 32px;
-  display: grid;
-  gap: 16px;
+  padding-left: 0;
 }
 
-main li {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 18px;
-  border: 1px solid var(--border-soft);
-  padding: 14px 18px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.03);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+ul li {
+  margin-bottom: 1rem;
 }
 
-main li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: var(--accent);
-  margin-right: 12px;
-  flex-shrink: 0;
-}
-
-main li a {
+ul li a {
   text-decoration: none;
+  font-size: 1.1rem;
   color: var(--text-main);
-  font-size: 15px;
 }
 
-main li a:hover {
-  text-decoration: underline;
+ul li a:hover {
+  color: var(--accent);
 }
 
 /* Footer */
 footer {
-  margin-top: 32px;
-  font-size: 12px;
+  margin-top: 4rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
 }
